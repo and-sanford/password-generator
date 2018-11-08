@@ -240,13 +240,16 @@ def print_slowly(text, i):
 ########################
 ### END OF FUNCTIONS ###
 ########################   
-    
+
+
+
 
 '''
 -----------------------
 ----- MAIN PROGRAM ----  
 -----------------------  
 '''
+
 psrn, psrn_length = generate_psrn()
 
 print 'Generating password',
