@@ -191,6 +191,12 @@ def prng(list1):
     # multiply by some of the pseudorandom numbers
     psrn = psrn * CPU_INTERRUPTS * CHARGE_PERCENT * MICROSECONDS * CPU_SOFT_INTERRUPTS
         
+        
+    # password ends in a few zeroes. Remove those (with a buffer of 10 for safety)
+    str_psrn = str(psrn)
+    str_psrn = str_psrn[:-10]
+    psrn = int(str_psrn)
+    
     # get psrn length
     psrn_length = len(str(psrn))
     
